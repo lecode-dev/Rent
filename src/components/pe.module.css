@@ -1,0 +1,15 @@
+.pe {
+position: absolute;
+width: 211px;
+height: 21px;
+left: 854px;
+top: 20px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 11px;
+line-height: 13px;
+
+color: black;
+}
