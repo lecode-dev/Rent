@@ -1,6 +1,7 @@
 import "./App.css";
 import Menu from "./components/Menu";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from '../src/pages/Home'
 
 const App = () => {
   return (
@@ -8,7 +9,7 @@ const App = () => {
       <Router>
         <Menu/>
         <Switch>
-          <Route path='/' exact/>
+          <Route path='/' exact component = {Home}/>
         </Switch>
       </Router>
     </div>

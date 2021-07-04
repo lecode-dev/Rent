@@ -1,5 +1,7 @@
+import { classes } from "istanbul-lib-coverage";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import './Menu.css'
 
 const Menu = () => {
   const [click, setClick] = useState(false);
@@ -14,7 +16,7 @@ const Menu = () => {
 
   return (
     <div>
-      <nav>
+      <nav className = 'navbar'>
         <div>
           <Link to="/" className="navbar-logo" onClick={clickHandler}>
             RENT <i className ='fab fa-typo3'/>
@@ -23,22 +25,22 @@ const Menu = () => {
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
+            <li className='.nav-links'>
                 <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                     HOME
                 </Link>
             </li>
-            <li className='nav-item'>
+            <li className='.nav-links'>
                 <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                     BUY
                 </Link>
             </li>
-            <li className='nav-item'>
+            <li className='.nav-links'>
                 <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                     SELL
                 </Link>
             </li>
-            <li className='nav-item'>
+            <li className='.nav-links'>
                 <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                     CONTACT US
                 </Link>
