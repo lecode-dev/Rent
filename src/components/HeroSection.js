@@ -5,7 +5,7 @@ const HeroSection = () => {
     return (
         <div className={classes.container}>
             <h2>RENT</h2>
-            <p>Your dream car awaits you.</p>
+            <h5 className ='HeroSection-Text'>Your dream car awaits you.</h5>
         </div>
     )
 }
