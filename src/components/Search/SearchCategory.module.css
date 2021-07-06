@@ -1,0 +1,32 @@
+button {
+    border: none;
+    width: 80px;
+    height: 65px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 9vh;
+}
+
+.buttonContainer {
+    width: 120vh;
+    margin: auto;
+}
+
+.conversivel{
+    background-image: url(../../images/mini_carro_1.svg) ;
+    
+    
+}
+.suv{
+    background-image: url(../../images/mini_carro_2.svg) ;
+}
+
+.sport {
+    background-image: url(../../images/mini_carro_3.svg) ;
+}
+
+.seda {
+    background-image: url(../../images/mini_carro_4.svg) ;
+}
