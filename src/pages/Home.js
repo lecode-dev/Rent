@@ -1,22 +1,17 @@
-import '../app.css';
-import HeroSection from '../components/HeroSection/HeroSection';
-import Footer from '../components/Footer/Footer';
-import Cards from '../components/Cards/Cards';
-import CardItem from '../components/CardItem/CardItem';
-import SearchCategory from '../components/Search/SearchCategory';
-import SearchBrand from '../components/Search/SearchBrand';
-
+import '../App.css'
+import HeroSection from '../components/HeroSection'
+import Footer from './Footer'
+import Cards from './Cards'
+import CardItem from './CardItem'
 
 const Home = () => {
-  return (
-    <div>
-      <HeroSection />
-      <SearchCategory />
-      <SearchBrand />
-      <Cards slides={CardItem} />
-      <Footer />
-    </div>
-  );
-};
+     return (
+         <div>
+             <HeroSection/>
+             <Cards slides={CardItem}/>
+             <Footer/>
+         </div>
+     )
+}
 
-export default Home;
+export default Home
