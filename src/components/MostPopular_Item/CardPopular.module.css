@@ -1,0 +1,23 @@
+.carrouselContainer{
+    width: 80vw;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .carrousel{
+    display: flex;
+  }
+  
+  .leftArrow_Popular{
+    width: 56px;
+    height: 56px;
+    position: absolute;
+  }
+  
+  .rightArrow_Popular{
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    }
+  
+  
