@@ -25,10 +25,6 @@
     width: 100%;
   }
 
-  .items::-webkit-scrollbar-track{
-      background: transparent;
-  }
-
 .items::-webkit-scrollbar-thumb {
     background: #E66D30;
     border-radius:50px;

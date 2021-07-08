@@ -1,4 +1,4 @@
-.carrouselContainer{
+.carrouselContainer_Popular{
     width: 80vw;
     overflow: hidden;
     margin: auto;
@@ -11,7 +11,9 @@
   .leftArrow_Popular{
     width: 56px;
     height: 56px;
-    position: absolute;
+    background: transparent;
+    top: 15vw;
+   
   }
   
   .rightArrow_Popular{

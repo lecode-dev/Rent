@@ -22,14 +22,13 @@ const MostPopular_Carousel = ({ props }) => {
   };
 
   return (
-    <div>
+    <div className = {classes.carrouselContainer_Popular}>
       <h5 className={classes.recent}>MOST POPULAR</h5>
       <FaCaretSquareLeft className={classes.leftArrow_Popular} onClick={prevSlide} />
       <FaCaretSquareRight
       className={classes.rightArrow_Popular}
       onClick={nextSlide}
       />
-      <div className={classes.carrouselContainer}>
         <div
           className={`${classes.carrousel}`}
           style={{ transform: `translateX(${x}px)` }}
@@ -42,7 +41,6 @@ const MostPopular_Carousel = ({ props }) => {
             );
           })}
         </div>
-      </div>
     </div>
   );
 };

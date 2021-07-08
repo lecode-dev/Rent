@@ -15,8 +15,9 @@ h5 {
   font-family: "Roboto";
 }
 
+
 button {
-  border: none;
+  border: transparent;
   width: 80px;
   height: 65px;
   background-repeat: no-repeat;
@@ -26,8 +27,12 @@ button {
   margin-right: 9vh;
 }
 
-.button :hover{
-  border-color: red;
+button:hover {background-color: rgb(172, 171, 171)}
+
+button:active {
+  background-color: #faf6f4;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 

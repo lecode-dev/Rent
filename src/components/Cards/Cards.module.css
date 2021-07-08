@@ -11,16 +11,10 @@
 .leftArrow{
   width: 56px;
   height: 56px;
-  top:220%;
-  position: absolute;
-  left: 6.5vh;
 }
 
 .rightArrow{
-  position: absolute;
   width: 56px;
   height: 56px;
-  top:220%;
-  right: 6.5vh;
 }
 
