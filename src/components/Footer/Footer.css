@@ -1,9 +1,10 @@
 .footer-container {
     background-color: #1A1A1A;
-    padding: 4rem 0 2rem 0;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 0;
 }
 
 .footer-text {
