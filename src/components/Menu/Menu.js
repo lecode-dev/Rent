@@ -6,7 +6,6 @@ const Menu = () => {
     <div>
       <div className={classes.navbar}>
         <ul>
-          
           <Link className={classes.navButton}>HOME</Link>
           <Link className={classes.navButton}>BUY</Link>
           <Link className={classes.navButton}>SELL</Link>

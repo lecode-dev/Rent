@@ -1,6 +1,7 @@
 import classes from "./SearchCategory.module.css";
 
 const SearchCategory = () => {
+  //implemetar aqui :)
   return (
     <div className={classes.buttonContainer}>
       <h5 className="category">SEARCH BY CATEGORY </h5>
