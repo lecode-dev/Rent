@@ -1,21 +1,6 @@
-.buttonContainer {
-    width: 120vh;
+.buttonContainer_Category {
+    width: fit-content;
     margin: auto;
+    align-items: center;
 }
 
-.conversivel{
-    background-image: url(../../images/mini_carro_1.svg) ;
-    
-    
-}
-.suv{
-    background-image: url(../../images/mini_carro_2.svg) ;
-}
-
-.sport {
-    background-image: url(../../images/mini_carro_3.svg) ;
-}
-
-.seda {
-    background-image: url(../../images/mini_carro_4.svg) ;
-}

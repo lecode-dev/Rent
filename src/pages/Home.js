@@ -9,6 +9,7 @@ import CardItem_Popular from '../components/MostPopular_Item/CardPopular';
 import MostPopular_Carousel from '../components/MostPopular_Item/MostPopular_Carousel';
 import CarCarousel from '../components/CarCarousel/CarCarousel';
 import Menu from '../components/Menu/Menu'
+import Review from '../components/Review/Review';
 
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
       <SearchBrand />
       <Cards slides={CardItem} />
       <MostPopular_Carousel props={CardItem_Popular}  />
+      <Review />
       <Footer />
     </div>
   );

@@ -1,15 +1,26 @@
 import classes from "./SearchCategory.module.css";
+import CardButton from "../CardButton/CardButton";
 
 const SearchCategory = () => {
-  //implemetar aqui :)
+   const imagesCategory = [
+    'mini_carro_1.svg',
+    'mini_carro_2.svg',
+    'mini_carro_3.svg',
+    'mini_carro_4.svg',
+   ]
   return (
-    <div className={classes.buttonContainer}>
-      <h5 className="category">SEARCH BY CATEGORY </h5>
-      <button className={classes.conversivel}></button>
-      <button className={classes.suv}></button>
-      <button className={classes.sport}></button>
-      <button className={classes.seda}></button>
-    </div>
+    
+    <div>
+    <h5 className="category">SEARCH BY CATEGORY</h5>
+    <div className = {classes.buttonContainer_Category}> 
+    {
+      imagesCategory.map((imagem)=>{
+        return(
+          <CardButton background={imagem}/>
+        ) 
+      })
+    }</div>
+  </div>
   );
 };
 

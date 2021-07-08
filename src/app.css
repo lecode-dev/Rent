@@ -30,9 +30,10 @@ button {
 button:hover {background-color: rgb(172, 171, 171)}
 
 button:active {
-  background-color: #faf6f4;
-  box-shadow: 0 5px #666;
+  background-color: rgb(172, 171, 171);
+  box-shadow: 0 3px #666;
   transform: translateY(4px);
+  transition: all 0.2s ease-in-out;
 }
 
 

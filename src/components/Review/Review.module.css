@@ -1,0 +1,27 @@
+.thomasContainer {
+  background-image: url("../../images/left_ilustration_thomas.svg");
+}
+
+.thomas {
+  background: transparent;
+  width: 651px;
+}
+
+.thomasTitle {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  background-color: transparent;
+  width: 335px;
+  margin-left: 75%;
+}
+
+.thomasText {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  background-color: transparent;
+  margin-left: 520px;
+}

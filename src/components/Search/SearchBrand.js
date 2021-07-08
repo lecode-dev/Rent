@@ -13,8 +13,9 @@ const SearchBrand = () => {
     'Ferrari_logo.svg'
   ]
     return (
-        <div className={classes.buttonContainer_Brand}>
+        <div >
           <h5 className="category">SEARCH BY BRAND</h5>
+          <div className={classes.buttonContainer_Brand}>
           {
             images.map((imagem)=>{
               return(
@@ -22,6 +23,7 @@ const SearchBrand = () => {
               ) 
             })
           }
+          </div>
         </div>
     )
 }

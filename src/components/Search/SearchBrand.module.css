@@ -1,5 +1,6 @@
 .buttonContainer_Brand {
-    width: 87%;
+    width: fit-content;
     margin: auto;
     align-items: center;
 }
+

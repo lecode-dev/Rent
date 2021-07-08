@@ -1,7 +1,7 @@
-import carro_carrossel_1 from '../../images/carro_carrossel_1.png';
+import carro_carrossel_1 from '../../images/carro_carrossel_3.png';
 import carro_carrossel_2 from '../../images/carro_carrossel_3.png';
 import carro_carrossel_3 from '../../images/carro_carrossel_4.png';
-import carro_carrossel_4 from '../../images/mostPopular_carro_2.png';
+import carro_carrossel_4 from '../../images/carro_carrossel_3.png';
 
 const CardItem = [
   {
