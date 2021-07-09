@@ -7,7 +7,7 @@
 
 @media screen and (max-width: 768px) {
     .buttonContainer_Category {
-        margin: auto;
+        margin-left: 10%;
         flex-wrap: wrap;
         justify-content: space-around;
 
