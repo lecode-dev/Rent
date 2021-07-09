@@ -12,8 +12,8 @@
   width: 56px;
   height: 56px;
   position: absolute;
-  margin-top: 10%;
-  margin-left: 8%;
+  margin-top: 15vh;
+  margin-left: 10vw;
   z-index: 99;
 }
 
@@ -21,9 +21,10 @@
   width: 56px;
   height: 56px;
   position: absolute;
-  margin-top: 10%;
-  margin-left: 89%;
+  margin-top: 15vh;
+  margin-left: 90%;
   z-index: 99;
+  display: flex;
 }
 
 @media screen and (max-width: 770px) {

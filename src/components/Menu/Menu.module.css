@@ -1,5 +1,3 @@
-
-
 .navbar {
   position: absolute;
   height: 64px;
@@ -39,7 +37,6 @@
   background: #e3743c;
   text-decoration: none;
   padding: 0 1rem;
-  align-self:flex-end;
 }
 
 .navButton:hover {
@@ -74,4 +71,3 @@
     background-color: #e3743c;
   }
 }
-
