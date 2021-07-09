@@ -25,14 +25,13 @@ ul {
   margin-top: -50px;
   margin-left: 127px;
   width: 100%;
-  text-decoration:inherit;
+  text-decoration: inherit;
 }
 
 .logo {
   width: 200px;
   height: 64px;
   background-color: #e3743c;
-
 }
 
 .navButton {

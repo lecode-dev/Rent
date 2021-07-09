@@ -22,25 +22,28 @@ const MostPopular_Carousel = ({ props }) => {
   };
 
   return (
-    <div className = {classes.carrouselContainer_Popular}>
+    <div className={classes.carrouselContainer_Popular}>
       <h5 className={classes.recent}>MOST POPULAR</h5>
-      <FaCaretSquareLeft className={classes.leftArrow_Popular} onClick={prevSlide} />
-      <FaCaretSquareRight
-      className={classes.rightArrow_Popular}
-      onClick={nextSlide}
+      <FaCaretSquareLeft
+        className={classes.leftArrow_Popular}
+        onClick={prevSlide}
       />
-        <div
-          className={`${classes.carrousel}`}
-          style={{ transform: `translateX(${x}px)` }}
-        >
-          {CardPopular.map((imagem, index) => {
-            return (
-              <div key={index}>
-                <img src={imagem.image} alt="card" className="image" />
-              </div>
-            );
-          })}
-        </div>
+      <FaCaretSquareRight
+        className={classes.rightArrow_Popular}
+        onClick={nextSlide}
+      />
+      <div
+        className={`${classes.carrousel}`}
+        style={{ transform: `translateX(${x}px)` }}
+      >
+        {CardPopular.map((imagem, index) => {
+          return (
+            <div key={index}>
+              <img src={imagem.image} alt="card" className="image" />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

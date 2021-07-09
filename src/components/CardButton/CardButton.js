@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-export default function CardButton({background}) {
+export default function CardButton({ background }) {
   return (
     <>
-      <button style={{backgroundImage: `url(/images/${background})`}}/>
+      <button style={{ backgroundImage: `url(/images/${background})` }} />
     </>
-  )
+  );
 }

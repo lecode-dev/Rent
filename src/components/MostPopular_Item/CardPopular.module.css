@@ -28,20 +28,21 @@
 
 @media screen and (max-width: 770px) {
   .carrousel {
-      overflow-x: scroll;
-
+    overflow-x: scroll;
   }
-  .carrousel::-webkit-scrollbar{
+  .carrousel::-webkit-scrollbar {
     width: 100%;
   }
 
   .carrousel::-webkit-scrollbar-thumb {
-    background: #E66D30;
-    border-radius:50px;}
+    background: #e66d30;
+    border-radius: 50px;
   }
+}
 
-  @media screen and (max-width: 770px) {
-    .leftArrow_Popular, .rightArrow_Popular {
-        display: none;
-  
-    }}
+@media screen and (max-width: 770px) {
+  .leftArrow_Popular,
+  .rightArrow_Popular {
+    display: none;
+  }
+}

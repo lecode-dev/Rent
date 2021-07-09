@@ -1,15 +1,14 @@
-.carrouselContainer{
+.carrouselContainer {
   width: 80vw;
   overflow: hidden;
   margin: auto;
 }
 
-.carrousel{
+.carrousel {
   display: flex;
-  
 }
 
-.leftArrow{
+.leftArrow {
   width: 56px;
   height: 56px;
   position: absolute;
@@ -18,37 +17,36 @@
   z-index: 99;
 }
 
-.rightArrow{
+.rightArrow {
   width: 56px;
   height: 56px;
   position: absolute;
   margin-top: 10%;
-  margin-LEFt: 89%;
+  margin-left: 89%;
   z-index: 99;
 }
 
+@media screen and (max-width: 770px) {
+  .leftArrow,
+  .rightArrow {
+    display: none;
+  }
+}
 
+@media screen and (max-width: 770px) {
+  .carrousel {
+    overflow-x: scroll;
+  }
+  .carrousel::-webkit-scrollbar {
+    width: 100%;
+  }
 
-  @media screen and (max-width: 770px) {
-    .leftArrow, .rightArrow {
-        display: none;
-  
-    }}
+  .carrousel::-webkit-scrollbar-thumb {
+    background: #e66d30;
+    border-radius: 50px;
+  }
+}
 
-    @media screen and (max-width: 770px) {
-      .carrousel {
-          overflow-x: scroll;
-    
-      }
-      .carrousel::-webkit-scrollbar{
-        width: 100%;
-      }
-    
-      .carrousel::-webkit-scrollbar-thumb {
-        background: #E66D30;
-        border-radius:50px;}
-      }
-
-      li::marker {
-        color: white;
-      }
+li::marker {
+  color: white;
+}
