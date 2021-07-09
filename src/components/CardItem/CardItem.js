@@ -1,9 +1,10 @@
-import carro_carrossel_1 from '../../images/carro_carrossel_3.png';
-import carro_carrossel_2 from '../../images/carro_carrossel_3.png';
-import carro_carrossel_3 from '../../images/carro_carrossel_4.png';
-import carro_carrossel_4 from '../../images/carro_carrossel_3.png';
+import carro_carrossel_1 from '../../images/carro_carrossel_1.svg';
+import carro_carrossel_2 from '../../images/carro_carrossel_4.svg';
+import carro_carrossel_3 from '../../images/carro_carrossel_3.svg';
+import carro_carrossel_4 from '../../images/carro_carrossel_4.png';
 
 const CardItem = [
+  
   {
     image: carro_carrossel_1,
     id: 1,
@@ -21,6 +22,10 @@ const CardItem = [
     id: 4,
   },
 
+  {
+    image: carro_carrossel_1,
+    id: 1,
+  },
 ];
 
 export default CardItem;

@@ -1,14 +1,30 @@
-.footer-container {
+.footerContainer {
     background-color: #1A1A1A;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 0;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.footer-text {
+.footerText {
     background-color: transparent;
     color: white;
     text-align: center;
 }
+
+.linkFooter {
+    background-color: #1A1A1A;
+    align-self: center;
+    color: white;
+    
+}
+
+ 
+
+
+
+
+

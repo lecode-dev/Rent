@@ -6,15 +6,49 @@
 
 .carrousel{
   display: flex;
+  
 }
 
 .leftArrow{
   width: 56px;
   height: 56px;
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 8%;
+  z-index: 99;
 }
 
 .rightArrow{
   width: 56px;
   height: 56px;
+  position: absolute;
+  margin-top: 10%;
+  margin-LEFt: 89%;
+  z-index: 99;
 }
 
+
+
+  @media screen and (max-width: 770px) {
+    .leftArrow, .rightArrow {
+        display: none;
+  
+    }}
+
+    @media screen and (max-width: 770px) {
+      .carrousel {
+          overflow-x: scroll;
+    
+      }
+      .carrousel::-webkit-scrollbar{
+        width: 100%;
+      }
+    
+      .carrousel::-webkit-scrollbar-thumb {
+        background: #E66D30;
+        border-radius:50px;}
+      }
+
+      li::marker {
+        background-color: white;
+      }

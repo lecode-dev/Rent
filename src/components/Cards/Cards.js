@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CardItem from "../CardItem/CardItem";
 import classes from "./Cards.module.css";
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
+import { FaCaretSquareRight, FaCaretSquareLeft } from "react-icons/fa";
 
 const Cards = ({ slides }) => {
   const [x, setX] = useState(0);
@@ -24,8 +24,9 @@ const Cards = ({ slides }) => {
   return (
     <div>
       <h5 className={classes.recent}>RECENT</h5>
-      <FaArrowAltCircleLeft className={classes.leftArrow} onClick={prevSlide} />
-      <FaArrowAltCircleRight
+      <FaCaretSquareLeft
+       className={classes.leftArrow} onClick={prevSlide} />
+      <FaCaretSquareRight
         className={classes.rightArrow}
         onClick={nextSlide}
       />
