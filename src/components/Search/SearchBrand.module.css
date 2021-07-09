@@ -6,7 +6,7 @@
     flex-direction: row;    
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1550px) {
     .buttonContainer_Brand {
         flex-wrap: wrap;
         justify-content: space-around;
