@@ -1,6 +1,15 @@
 .buttonContainer_Brand {
-    width: fit-content;
     margin: auto;
     align-items: center;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
 }
 
+@media screen and (max-width: 768px) {
+    .buttonContainer_Brand {
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }}

@@ -2,5 +2,13 @@
     width: fit-content;
     margin: auto;
     align-items: center;
+    display: flex;
 }
 
+@media screen and (max-width: 768px) {
+    .buttonContainer_Category {
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }}

@@ -24,6 +24,7 @@
   margin-left: 50%;
   margin-top: 8%;
   position: absolute;
+  align-self: auto;
 }
 
 
@@ -37,4 +38,11 @@
   margin-left: 50%;
   margin-top: 15%;
   position: absolute;
+  align-self: auto;
 }
+
+@media screen and (max-width: 570px) {
+    .thomasText, .thomasTitle {
+        display: none;
+
+    }}
