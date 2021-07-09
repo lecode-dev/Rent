@@ -22,10 +22,6 @@ const CardItem_Popular = [
     id: 4,
   },
 
-  {
-    image: carro_carrossel_5,
-    id: 5,
-  },
 ];
 
 export default CardItem_Popular;
