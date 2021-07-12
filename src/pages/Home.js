@@ -10,6 +10,7 @@ import MostPopular_Carousel from '../components/MostPopular_Item/MostPopular_Car
 import CarCarousel from '../components/CarCarousel/CarCarousel';
 import Menu from '../components/Menu/Menu'
 import Review from '../components/Review/Review';
+import '../UI/Button/Button.css'
 
 
 const Home = () => {

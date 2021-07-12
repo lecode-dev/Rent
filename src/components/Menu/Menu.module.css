@@ -29,6 +29,7 @@
   background-color: #e3743c;
 }
 
+
 .navButton {
   font-family: "Roboto";
   font-weight: bold;
@@ -36,7 +37,14 @@
   color: white;
   background: #e3743c;
   text-decoration: none;
-  padding: 0 1rem;
+  margin-left: 16px;
+  margin-right: 10px;
+  display: initial;
+  visibility: visible;
+}
+
+.hidden{
+  visibility: hidden;
 }
 
 .navButton:hover {
@@ -48,26 +56,5 @@
 }
 
 @media screen and (max-width: 768px) {
-  .navButton,
-  .logoName {
-    display: none;
-  }
-}
-
-.FaBars {
-  display: none;
-  color: #fff;
-}
-
-@media screen and (max-width: 768px) {
-  .FaBars {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 75%);
-    font-size: 25px;
-    cursor: pointer;
-    background-color: #e3743c;
-  }
+  
 }
