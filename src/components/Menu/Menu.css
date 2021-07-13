@@ -4,7 +4,7 @@
   left: -0.79px;
   top: 0px;
   display: flex;
-  width: 100%;
+  width: 100vw;
   background: #e3743c;
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -44,8 +44,8 @@
   visibility: visible;
 }
 
-.menuContainer {
-  visibility: hidden;
+.menuHamburguer {
+  display: none;
 }
 
 .navButton:hover {
@@ -56,19 +56,23 @@
   color: rgb(243, 230, 213);
 }
 
+.showButtonContainer {
+  display: initial !important;
+}
+
 @media screen and (max-width: 768px) {
-  
-  .navButton {
-    visibility: hidden;
+  .menuHamburguer {
+    display: initial;
   }
 
-  .FaBars {
-    visibility: visible;
+  .navButtonContainer, .logoName {
+    display: none;
   }
-  menuContainerActive .navButton {
-    visibility: visible;
+
+  .menuContainer .navButton{
     display: flex;
+    height: 15px;
+    background-color: #F0ECEC;
+    color: #e3743c;
   }
-
- 
 }
