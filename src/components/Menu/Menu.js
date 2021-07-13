@@ -18,10 +18,10 @@ const Menu = () => {
         </Link>
         <div className={menuToggle ? "menuContainer" : "menuContainerActive"}>
           <div className={`navButtonContainer ${menuToggle ? 'showButtonContainer' : 'menuContainer'}`}>
-            <Link className={"navButton"}>HOME</Link>
-            <Link className={"navButton"}>BUY</Link>
-            <Link className={"navButton"}>SELL</Link>
-            <Link className={"navButton"}>CONTACT US</Link>
+            <Link to ='#'className={"navButton"}>HOME</Link>
+            <Link to ='/'className={"navButton"}>BUY</Link>
+            <Link to ='/'className={"navButton"}>SELL</Link>
+            <Link to ='/'className={"navButton"}>CONTACT US</Link>
           </div>
 
           <div className="menuHamburguer">

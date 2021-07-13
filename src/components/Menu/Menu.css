@@ -60,6 +60,11 @@
   display: initial !important;
 }
 
+.FaBars {
+  color: white;
+  margin-right: 20px;
+}
+
 @media screen and (max-width: 768px) {
   .menuHamburguer {
     display: initial;
@@ -74,5 +79,10 @@
     height: 15px;
     background-color: #F0ECEC;
     color: #e3743c;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top:10px;
+    opacity: 0.9;
   }
 }
