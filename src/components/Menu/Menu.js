@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import classes from "./Menu.module.css";
+import classes from "./Menu.css";
 import * as FaIcons from "react-icons/fa";
 import { useState } from "react";
 
@@ -11,24 +11,23 @@ const Menu = () => {
 
   return (
     <div>
-      <div className={classes.navbar}>
+      <div className={"navbar"}>
         <Link to="#">
           <img src="../../images/Rent_logo.svg" className={classes.logo} />
-          <h2 className={classes.logoName}>RENT</h2>
+          <h2 className={"logoName"}>RENT</h2>
         </Link>
-        <ul>
-          <Link className={classes.navButton}>HOME</Link>
-          <Link className={classes.navButton}>BUY</Link>
-          <Link className={classes.navButton}>SELL</Link>
-          <Link className={classes.navButton}>CONTACT US</Link>
-        </ul>
-        
-        <div className={menuToggle ? `${classes.navButton}` : `${classes.navButton} ${classes.hidden}` }>
-        <Link to="#" className={classes.FaBars}>
-          <FaIcons.FaBars onClick={MenuMobile} />
-        </Link>
-        </div>
 
+        <ul className={"menuContainer"}>
+          <div className={menuToggle ? "menuContainer" : "menuContainerActive"}>
+            <Link to="#" className={"FaBars"}>
+              <FaIcons.FaBars onClick={MenuMobile} />
+            </Link>
+          </div>
+          <Link className={"navButton"}>HOME</Link>
+          <Link className={"navButton"}>BUY</Link>
+          <Link className={"navButton"}>SELL</Link>
+          <Link className={"navButton"}>CONTACT US</Link>
+        </ul>
       </div>
     </div>
   );

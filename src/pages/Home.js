@@ -15,7 +15,7 @@ import '../UI/Button/Button.css'
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Menu/>
       <HeroSection />
       <CarCarousel />
@@ -25,7 +25,7 @@ const Home = () => {
       <MostPopular_Carousel props={CardItem_Popular}  />
       <Review />
       <Footer />
-    </div>
+    </>
   );
 };
 

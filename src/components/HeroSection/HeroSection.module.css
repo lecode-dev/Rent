@@ -13,9 +13,8 @@
 
 .rent {
   position: absolute;
-  width: 203px;
+  width: 100%;
   height: 86px;
-  left: 50px;
   top: 300px;
   background-color: transparent;
   
@@ -33,9 +32,8 @@
 
 .HeroSectionText {
   position: absolute;
-  width: 300px;
+  width: 100%;
   height: 80px;
-  left: 50px;
   top: 390px;
   font-family: 'Roboto';
   font-style: normal;
