@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import CardItem from "../CardItem/CardItem";
+import { CardObject } from "./CardObject";
 import classes from "./Cards.module.css";
 import { FaCaretSquareRight, FaCaretSquareLeft } from "react-icons/fa";
+import { valueToNode } from "@babel/types";
 
 const Cards = ({ slides }) => {
   const [x, setX] = useState(0);
@@ -26,21 +28,28 @@ const Cards = ({ slides }) => {
   return (
     <div>
       <h5 className={classes.recent}>RECENT</h5>
-      <FaCaretSquareLeft
-       className={classes.leftArrow} onClick={prevSlide} />
-      <FaCaretSquareRight
-        className={classes.rightArrow}
-        onClick={nextSlide}
-      />
+      <FaCaretSquareLeft className={classes.leftArrow} onClick={prevSlide} />
+      <FaCaretSquareRight className={classes.rightArrow} onClick={nextSlide} />
       <div className={classes.carrouselContainer}>
         <div
           className={`${classes.carrousel}`}
           style={{ transform: `translateX(${x}px)` }}
         >
-          {CardItem.map((imagem, index) => {
+          {CardObject.map((index) => {
             return (
-              <li key={index}>
-                <img src={imagem.image} alt="card" className="image" />
+              <li key={index} className={classes.cardContainer}>
+                <img
+                  alt="car image"
+                  className={classes.carCard}
+                  src={index.carImage}
+                />
+                <div className={classes.price}>{index.price} </div>
+                <div className={classes.title}>{index.title}</div>
+                <div className ={classes.componentsContainer}>
+                <div className={classes.date}> {index.date}</div>
+                <div className={classes.velocity}> {index.velocity}</div>
+                <div className={classes.location}>{index.location}</div>
+                </div>
               </li>
             );
           })}

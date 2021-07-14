@@ -18,6 +18,9 @@ h5 {
   font-family: "Roboto";
 }
 
+li::marker {
+  color: transparent;
+}
 
 
 
