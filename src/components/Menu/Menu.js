@@ -33,7 +33,7 @@ const Menu = () => {
               SELL
             </Link>
             <Link to="/" className={"navButton"}>
-              CONTACT US
+            CONTACT US
             </Link>
           </div>
 

@@ -25,9 +25,10 @@
 }
 
 .logo {
-  width: 200px;
+  width: 100%;
   height: 62px;
   background-color: #e3743c;
+  flex-grow: unset;
 }
 
 
