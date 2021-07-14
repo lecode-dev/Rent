@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import CardItem from "../CardItem/CardItem";
 import { CardObject } from "./CardObject";
 import classes from "./Cards.module.css";
 import { FaCaretSquareRight, FaCaretSquareLeft } from "react-icons/fa";
@@ -51,8 +50,8 @@ const Cards = ({ slides }) => {
                 <div className={classes.icon3}>{index.icon3}</div>
                 </div>
                 <div className ={classes.componentsContainer}>
-                <div className={classes.date}> {index.date}</div>
                 <div className={classes.velocity}> {index.velocity}</div>
+                <div className={classes.date}> {index.date}</div>
                 <div className={classes.location}>{index.location}</div>
                 </div> 
               </li>

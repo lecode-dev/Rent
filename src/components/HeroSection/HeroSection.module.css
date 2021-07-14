@@ -48,3 +48,9 @@
     font-size: 3.2vh;
   }
 }
+
+@media screen and (max-width: 260px) {
+  .rent {
+    font-size: 35vw;
+  }
+}
