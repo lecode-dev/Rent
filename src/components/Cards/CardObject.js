@@ -1,3 +1,4 @@
+import * as AiIcons from "react-icons/fa";
 import car1 from "../../images/carro_2_menu_carrossel_1.svg";
 import car2 from "../../images/carro_2_menu_carrossel_2.svg";
 import car3 from "../../images/carro_2_menu_carrossel_3.svg";
@@ -5,8 +6,10 @@ import car4 from "../../images/carro_2_menu_carrossel_4.svg";
 
 export const CardObject = [
     {
-        title: 'Porshe',
-        
+        title: 'MUSTANG',
+        icon1: <AiIcons.FaLocationArrow/>,
+        icon2: <AiIcons.FaRegCalendarAlt/>,
+        icon3: <AiIcons.FaRegCompass/>,
         location: 'São Paulo',
         date: '2020',
         velocity:0,
@@ -15,8 +18,10 @@ export const CardObject = [
 
     },
     {
-        title: 'Subaru',
-        
+        title: 'SUBARU',
+        icon1: <AiIcons.FaLocationArrow/>,
+        icon2: <AiIcons.FaRegCalendarAlt/>,
+        icon3: <AiIcons.FaRegCompass/>,
         location: 'Belo Horizonte',
         date: '2018',
         velocity:0,
@@ -24,8 +29,10 @@ export const CardObject = [
         price:30.000
 
     },{
-        title: 'Lamborghini',
-        
+        title: 'LAMBORGHINI',
+        icon1: <AiIcons.FaLocationArrow/>,
+        icon2: <AiIcons.FaRegCalendarAlt/>,
+        icon3: <AiIcons.FaRegCompass/>,
         location: 'Bocaiuva',
         date: '2019',
         velocity:0,
@@ -34,8 +41,10 @@ export const CardObject = [
 
     }
     ,{
-        name: 'Porshe',
-        
+        title: 'NISSAN',
+        icon1: <AiIcons.FaLocationArrow/>,
+        icon2: <AiIcons.FaRegCalendarAlt/>,
+        icon3: <AiIcons.FaRegCompass/>,
         location: 'Montes Claros',
         date: '2021',
         velocity:0,
