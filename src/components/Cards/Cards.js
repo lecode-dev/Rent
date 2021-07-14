@@ -45,15 +45,16 @@ const Cards = ({ slides }) => {
                 />
                 <div className={classes.price}>{index.price} </div>
                 <div className={classes.title}>{index.title}</div>
-                <div className ={classes.componentsContainer}>
+                <div className ={classes.iconsContainer}>
                 <div className={classes.icon1}> {index.icon1}</div>
                 <div className={classes.icon2}> {index.icon2}</div>
                 <div className={classes.icon3}>{index.icon3}</div>
+                </div>
                 <div className ={classes.componentsContainer}>
                 <div className={classes.date}> {index.date}</div>
                 <div className={classes.velocity}> {index.velocity}</div>
                 <div className={classes.location}>{index.location}</div>
-                </div> </div>
+                </div> 
               </li>
             );
           })}

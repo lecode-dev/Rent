@@ -14,7 +14,7 @@ export const CardObject = [
         date: '2020',
         velocity:0,
         carImage: car1,
-        price:139.000
+        price:'$ 139.000'
 
     },
     {
@@ -26,7 +26,7 @@ export const CardObject = [
         date: '2018',
         velocity:0,
         carImage: car2,
-        price:30.000
+        price:'$ 30.000'
 
     },{
         title: 'LAMBORGHINI',
@@ -37,7 +37,7 @@ export const CardObject = [
         date: '2019',
         velocity:0,
         carImage: car3,
-        price:300.000
+        price:'$ 300.000'
 
     }
     ,{
@@ -49,7 +49,7 @@ export const CardObject = [
         date: '2021',
         velocity:0,
         carImage: car4,
-        price:30.000
+        price:'$ 30.000'
 
     }
 ]
