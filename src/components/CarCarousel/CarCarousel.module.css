@@ -25,3 +25,9 @@
   background: #e66d30;
   border-radius: 50px;
 }
+
+@media screen and (max-width: 600px) {
+  .itemsContainer{
+    width: 90%;
+  }
+}
