@@ -26,8 +26,8 @@
   border-radius: 50px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
   .itemsContainer{
-    width: 90%;
+    width: 80%;
   }
 }
