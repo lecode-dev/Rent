@@ -6,18 +6,20 @@ import CardItem_Popular from "./CardPopular";
 const MostPopular_Carousel = ({ props }) => {
   const [x, setX] = useState(0);
   const length = props.length;
+  const lengthCards = 245;
+  const maxLengthCards = 980;
 
   const nextSlide = () => {
-    setX(x + 284);
-    if (x === 1136) {
-      setX(x - 1136);
+    setX(x + lengthCards);
+    if (x === maxLengthCards) {
+      setX(x - maxLengthCards);
     }
   };
 
   const prevSlide = () => {
-    setX(x - 284);
+    setX(x - lengthCards);
     if (x === 0) {
-      setX(x + 1136);
+      setX(x + maxLengthCards);
     }
   };
 

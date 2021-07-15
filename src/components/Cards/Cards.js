@@ -6,8 +6,8 @@ import { FaCaretSquareRight, FaCaretSquareLeft } from "react-icons/fa";
 const Cards = ({ slides }) => {
   const [x, setX] = useState(0);
   const length = slides.length;
-  const lengthCards = 242;
-  const maxLengthCards = 1136;
+  const lengthCards = 245;
+  const maxLengthCards = 980;
 
   const nextSlide = () => {
     setX(x + lengthCards);
