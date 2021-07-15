@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import { CardObject } from "./CardObject";
 import classes from "./Cards.module.css";
 import { FaCaretSquareRight, FaCaretSquareLeft } from "react-icons/fa";
-import { valueToNode } from "@babel/types";
 
 const Cards = ({ slides }) => {
   const [x, setX] = useState(0);
   const length = slides.length;
-  const lengthCards = 284;
+  const lengthCards = 242;
   const maxLengthCards = 1136;
 
   const nextSlide = () => {
