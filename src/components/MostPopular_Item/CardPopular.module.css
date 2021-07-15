@@ -95,7 +95,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 820px) {
   .carrousel {
     overflow-x: scroll;
   }
@@ -109,7 +109,7 @@
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 820px) {
   .leftArrow_Popular,
   .rightArrow_Popular {
     display: none;

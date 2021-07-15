@@ -14,15 +14,14 @@
 .rent {
   position:absolute;
   width: 80vw;
-  top: 40vh;
+  top: 35vh;
   background-color: transparent;
-  
   font-family: 'Roboto';
   font-style: normal;
   font-weight: bold;
   font-size: 5.6rem;
   text-align: left;
-  
+  padding-bottom: 2px;
   color: #FFFFFF;  
 }
 
@@ -31,26 +30,30 @@
   width: 80vw;
   top: 60vh;
   font-family: 'Roboto';
-  font-style: normal;
-  font-weight: bold;
   font-size: 2.6vw;
-  line-height: 49px;
+  line-height: 65px;
   background-color: transparent;
   text-align: left;
   flex-wrap: wrap;
-
-  
+  padding-top: 20px;
   color: #F2EDED;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800) {
   .HeroSectionText {
     font-size: 3.2vh;
   }
+  .rent {
+    font-size: 30vw;
+    
+  }
 }
 
-@media screen and (max-width: 260px) {
+@media screen and (max-width: 400px) {
   .rent {
-    font-size: 35vw;
+    font-size: 30vw;
+  }
+  .HeroSectionText {
+    font-size: 4vh;
   }
 }
