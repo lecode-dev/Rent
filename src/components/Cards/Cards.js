@@ -1,41 +1,68 @@
-import React, { useState } from "react";
-import { CardObject } from "./CardObject";
+import React, { Component } from "react";
 import classes from "./Cards.module.css";
-import { FaCaretSquareRight, FaCaretSquareLeft } from "react-icons/fa";
+import Carousel from 'react-elastic-carousel';
+import * as AiIcons from "react-icons/fa";
+import car1 from "../../images/carro_2_menu_carrossel_1.svg";
+import car2 from "../../images/carro_2_menu_carrossel_2.svg";
+import car3 from "../../images/carro_2_menu_carrossel_3.svg";
+import car4 from "../../images/carro_2_menu_carrossel_4.svg";
 
-const Cards = ({ slides }) => {
-  const [x, setX] = useState(0);
-  const length = slides.length;
-  const lengthCards = 245;
-  const maxLengthCards = 980;
+class Cards extends Component {
+  state = { items: [{
+     title: 'MUSTANG',
+    icon1: <AiIcons.FaLocationArrow/>,
+    icon2: <AiIcons.FaRegCalendarAlt/>,
+    icon3: <AiIcons.FaRegCompass/>,
+    location: 'São Paulo',
+    date: '2020',
+    velocity:0,
+    carImage: car1,
+    price:'$ 139.000'
 
-  const nextSlide = () => {
-    setX(x + lengthCards);
-    if (x === maxLengthCards) {
-      setX(x - maxLengthCards);
-    }
-  };
+},
+{
+    title: 'SUBARU',
+    icon1: <AiIcons.FaLocationArrow/>,
+    icon2: <AiIcons.FaRegCalendarAlt/>,
+    icon3: <AiIcons.FaRegCompass/>,
+    location: 'Belo Horizonte',
+    date: '2018',
+    velocity:0,
+    carImage: car2,
+    price:'$ 30.000'
 
-  const prevSlide = () => {
-    setX(x - lengthCards);
-    if (x === 0) {
-      setX(x + maxLengthCards);
-    }
-  };
+},{
+    title: 'LAMBORGHINI',
+    icon1: <AiIcons.FaLocationArrow/>,
+    icon2: <AiIcons.FaRegCalendarAlt/>,
+    icon3: <AiIcons.FaRegCompass/>,
+    location: 'Bocaiuva',
+    date: '2019',
+    velocity:0,
+    carImage: car3,
+    price:'$ 300.000'
 
-  return (
-    <div>
-      <h5 className={classes.recent}>RECENT</h5>
-      <FaCaretSquareLeft className={classes.leftArrow} onClick={prevSlide} />
-      <FaCaretSquareRight className={classes.rightArrow} onClick={nextSlide} />
-      <div className={classes.carrouselContainer}>
-        <div
-          className={`${classes.carrousel}`}
-          style={{ transform: `translateX(${x}px)` }}
-        >
-          {CardObject.map((index) => {
-            return (
-              <li key={index} className={classes.cardContainer}>
+}
+,{
+    title: 'NISSAN',
+    icon1: <AiIcons.FaLocationArrow/>,
+    icon2: <AiIcons.FaRegCalendarAlt/>,
+    icon3: <AiIcons.FaRegCompass/>,
+    location: 'Montes Claros',
+    date: '2021',
+    velocity:0,
+    carImage: car4,
+    price:'$ 30.000'
+
+}]
+}
+  
+
+  render () {
+    const {items} = this.state;
+    return (
+      <Carousel breakPoints={items}>
+        {items.map (index =>  <li key={index} className={classes.cardContainer}>
                 <img
                   alt="car image"
                   className={classes.carCard}
@@ -53,13 +80,9 @@ const Cards = ({ slides }) => {
                 <div className={classes.date}> {index.date}</div>
                 <div className={classes.location}>{index.location}</div>
                 </div> 
-              </li>
-            );
-          })}
-        </div>
-      </div>
-    </div>
-  );
-};
+              </li>)}
+      </Carousel>
+    )
+  }}
 
 export default Cards;
