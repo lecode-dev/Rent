@@ -103,22 +103,6 @@
   text-align: center;
 }
 
-.slick-prev,
-.slick-next
-{
-    font-size: 30 !important;
-    width: 30px !important;
-    height: 3px;
-    z-index: 99 !important;
-    color: rgb(45, 54, 126) !important;
-    font-size: 45px !important;
-
-}
-
-.slick-arrow {
-  color: black  !important;
-}
-
 .slick-next:before, .slick-prev:before {
   color: #000 !important;
 }
