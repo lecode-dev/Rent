@@ -32,6 +32,9 @@ li::marker {
   color: transparent;
 }
 
+.slick-next:before, .slick-prev:before {
+  color: #000 !important;
+}
 
 
 

@@ -103,13 +103,8 @@
   text-align: center;
 }
 
-.slick-next:before, .slick-prev:before {
-  color: #000 !important;
-}
-
 li {
   width: 80% !important ;
-
 }
 
 .slick-slide .slick-active .slick-current {
