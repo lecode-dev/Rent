@@ -115,6 +115,10 @@
 
 }
 
+.slick-next:before  {
+  color: black !important;
+}
+
 li {
   width: 80% !important ;
 
