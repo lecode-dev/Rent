@@ -1,36 +1,39 @@
-.carrouselContainer_Popular {
+.carrouselContainer {
   width: 80vw;
   overflow: hidden;
   margin: auto;
+  
 }
 
 .carrousel {
   display: flex;
 }
 
-.leftArrow_Popular {
+.leftArrow {
   width: 56px;
   height: 56px;
   position: absolute;
-margin-top: 50px; 
-margin-left: -3%;
+  margin-top: 50px; 
+  margin-left: 7%;
   z-index: 99;
 }
 
-.rightArrow_Popular {
+.rightArrow {
   width: 56px;
   height: 56px;
   position: absolute;
-  margin-top: 50px;  margin-left: 80%;
+  margin-top: 50px; 
+  margin-left: 90%;
   z-index: 99;
 }
+
 
 .cardContainer {
-  height: 237px;
+  height: 237px !important;
   background-color: rgba(230, 109, 48, 0.92);
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  margin-right: 20px;
+  margin-right: 20px !important;
   margin-bottom: 20px;
   padding-right: 15px;
   padding-left: 15px;
@@ -40,28 +43,34 @@ margin-left: -3%;
   display: flex;
   flex-direction: row;
   color: white;
-  width: 80%;
+  width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-bottom:2px;
   font-size: 20px;
   margin: auto;
 }
 
+
 .componentsContainer {
-  display: flex;
   flex-direction: row;
   color: white;
   font-family: "Roboto";
-  justify-content: space-between;
   font-size: 10px;
   width: 100%;
-  margin: auto;
+  margin: auto !important;
+  vertical-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
 }
 
 .carCard {
-  width: 190px;
+  width: 190px ;
   height: 125px;
+  margin: auto;
 }
 
 .title {
@@ -94,23 +103,92 @@ margin-left: -3%;
   text-align: center;
 }
 
-@media screen and (max-width: 820px) {
-  .carrousel {
-    overflow-x: scroll;
-  }
-  .carrousel::-webkit-scrollbar {
-    width: 100%;
+.slick-prev,
+.slick-next
+{
+    font-size: 30 !important;
+    width: 30px !important;
+    height: 3px;
+    z-index: 99 !important;
+    color: black !important;
+    font-size: 45px !important;
+
+}
+
+.slick-prev, .slick-next {
+  /* font-size: 0; */
+  line-height: none !important; 
+  position: relative !important;
+  top: 50%;
+  display: block;
+  width: fit-content !important;
+  height: 20px;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+
+li {
+  width: 80% !important ;
+
+}
+
+.slick-slide .slick-active .slick-current {
+  width: fit-content ;
+}
+
+.slick-list {
+  margin-right: 20px !important;
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  
+
+  
+
+  li {
+    width: 95% !important;  
   }
 
-  .carrousel::-webkit-scrollbar-thumb {
-    background: #e66d30;
-    border-radius: 50px;
+  .cardContainer {
+    display: flex;
+  }
+
+  .price {
+    margin-left: 0;
+    width: 74px;
+
+  }
+
+  .carCard {
+    width: 95%;
+  }
+
+  .slick-arrow {
+    display: NONE;
   }
 }
 
-@media screen and (max-width: 820px) {
-  .leftArrow_Popular,
-  .rightArrow_Popular {
-    display: none;
+@media screen and (max-width: 650)
+{
+  .cardContainer{
+    width: 90vh;
+  }
+
+  .slick-arrow{
+    display: none !important;
+  }
+
+  .componentsContainer{
+    display: block;
+
   }
 }

@@ -1,14 +1,19 @@
 .buttonContainer_Category {
-    width: fit-content;
     margin: auto;
     align-items: center;
+    width: fit-content;
     display: flex;
+    flex-direction: row;  
+}
+
+.searchCategory {
+    margin: auto;
 }
 
 @media screen and (max-width: 768px) {
     .buttonContainer_Category {
-        margin-left: 10%;
         flex-wrap: wrap;
         justify-content: space-around;
+        margin-left: 10%;
 
     }}

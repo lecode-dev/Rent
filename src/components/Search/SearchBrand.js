@@ -13,7 +13,7 @@ const SearchBrand = () => {
     "Ferrari_logo.svg",
   ];
   return (
-    <div>
+    <div className ={classes.searchBrand}>
       <h5 className="category">SEARCH BY BRAND</h5>
       <div className={classes.buttonContainer_Brand}>
         {images.map((imagem) => {

@@ -6,6 +6,7 @@ import car2 from "../../images/carro_2_menu_carrossel_2.svg";
 import car3 from "../../images/carro_2_menu_carrossel_3.svg";
 import car4 from "../../images/carro_2_menu_carrossel_4.svg";
 import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick";
 
 const settings = {

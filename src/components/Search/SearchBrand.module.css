@@ -6,6 +6,10 @@
     flex-direction: row;    
 }
 
+.searchBrand {
+    margin: auto;
+}
+
 @media screen and (max-width: 1550px) {
     .buttonContainer_Brand {
         flex-wrap: wrap;

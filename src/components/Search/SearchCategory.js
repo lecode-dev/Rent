@@ -9,7 +9,7 @@ const SearchCategory = () => {
     "mini_carro_4.svg",
   ];
   return (
-    <div>
+    <div className ={classes.searchCategory}>
       <h5 className="category">SEARCH BY CATEGORY</h5>
       <div className={classes.buttonContainer_Category}>
         {imagesCategory.map((imagem) => {

@@ -7,9 +7,9 @@ import car10 from "../../images/carro_2_menu_carrossel_10.svg";
 const CardItem_Popular = [
   {
     title: 'MUSTANG',
-    icon1: <AiIcons.FaLocationArrow/>,
-    icon2: <AiIcons.FaRegCalendarAlt/>,
-    icon3: <AiIcons.FaRegCompass/>,
+    iconFast: <AiIcons.FaLocationArrow/>,
+    iconCalendar: <AiIcons.FaRegCalendarAlt/>,
+    iconLocation: <AiIcons.FaRegCompass/>,
     location: 'Rio de Janeiro',
     date: '2020',
     velocity:0,
@@ -19,9 +19,9 @@ const CardItem_Popular = [
 },
 {
     title: 'SUBARU',
-    icon1: <AiIcons.FaLocationArrow/>,
-    icon2: <AiIcons.FaRegCalendarAlt/>,
-    icon3: <AiIcons.FaRegCompass/>,
+    iconFast: <AiIcons.FaLocationArrow/>,
+    iconCalendar: <AiIcons.FaRegCalendarAlt/>,
+    iconLocation: <AiIcons.FaRegCompass/>,
     location: 'Campina Grande',
     date: '2018',
     velocity:0,
@@ -30,9 +30,9 @@ const CardItem_Popular = [
 
 },{
     title: 'LAMBORGHINI',
-    icon1: <AiIcons.FaLocationArrow/>,
-    icon2: <AiIcons.FaRegCalendarAlt/>,
-    icon3: <AiIcons.FaRegCompass/>,
+    iconFast: <AiIcons.FaLocationArrow/>,
+    iconCalendar: <AiIcons.FaRegCalendarAlt/>,
+    iconLocation: <AiIcons.FaRegCompass/>,
     location: 'Ibó-Abaré',
     date: '2021',
     velocity:0,
@@ -42,9 +42,9 @@ const CardItem_Popular = [
 }
 ,{
     title: 'NISSAN',
-    icon1: <AiIcons.FaLocationArrow/>,
-    icon2: <AiIcons.FaRegCalendarAlt/>,
-    icon3: <AiIcons.FaRegCompass/>,
+    iconFast: <AiIcons.FaLocationArrow/>,
+    iconCalendar: <AiIcons.FaRegCalendarAlt/>,
+    iconLocation: <AiIcons.FaRegCompass/>,
     location: 'Montes Claros',
     date: '2020',
     velocity:0,
