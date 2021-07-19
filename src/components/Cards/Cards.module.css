@@ -110,12 +110,16 @@
     width: 30px !important;
     height: 3px;
     z-index: 99 !important;
-    color: black !important;
+    color: rgb(45, 54, 126) !important;
     font-size: 45px !important;
 
 }
 
-.slick-next:before  {
+.slick-arrow {
+  color: black  !important;
+}
+
+.slick-next:before, .slick-prev:before {
   color: black !important;
 }
 
