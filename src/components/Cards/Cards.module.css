@@ -120,7 +120,7 @@
 }
 
 .slick-next:before, .slick-prev:before {
-  color: black !important;
+  color: #000 !important;
 }
 
 li {
