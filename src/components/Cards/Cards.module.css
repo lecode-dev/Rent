@@ -2,6 +2,7 @@
   width: 80vw;
   overflow: hidden;
   margin: auto;
+  
 }
 
 .carrousel {
@@ -26,12 +27,13 @@
   z-index: 99;
 }
 
+
 .cardContainer {
-  height: 237px;
+  height: 237px !important;
   background-color: rgba(230, 109, 48, 0.92);
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  margin-right: 20px;
+  margin-right: 20px !important;
   margin-bottom: 20px;
   padding-right: 15px;
   padding-left: 15px;
@@ -41,13 +43,14 @@
   display: flex;
   flex-direction: row;
   color: white;
-  width: 80%;
+  width: 70%;
   align-items: center;
   justify-content: space-between;
   margin-bottom:2px;
   font-size: 20px;
   margin: auto;
 }
+
 
 .componentsContainer {
   display: flex;
@@ -57,12 +60,13 @@
   justify-content: space-between;
   font-size: 10px;
   width: 100%;
-  margin: auto;
+  margin: auto !important;
 }
 
 .carCard {
-  width: 190px;
+  width: 190px ;
   height: 125px;
+  margin: auto;
 }
 
 .title {
@@ -95,23 +99,75 @@
   text-align: center;
 }
 
-@media screen and (max-width: 830px) {
-  .leftArrow,
-  .rightArrow {
-    display: none;
-  }
+.slick-prev,
+.slick-next
+{
+    font-size: 30 !important;
+    width: 30px !important;
+    height: 3px;
+    z-index: 99 !important;
+    color: black !important;
+    font-size: 45px !important;
+
 }
 
-@media screen and (max-width: 830px) {
+
+li {
+  width: 80% !important ;
+
+}
+
+.slick-slide .slick-active .slick-current {
+  width: fit-content ;
+}
+
+.slick-list {
+  margin-right: 20px !important;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
   .carrousel {
-    overflow-x: scroll;
+    overflow-x: scroll !important;
+
   }
   .carrousel::-webkit-scrollbar {
-    width: 100%;
+    width: 100% !important;
   }
 
   .carrousel::-webkit-scrollbar-thumb {
     background: #e66d30;
     border-radius: 50px;
+  }
+
+  li {
+    width: 95% !important;  
+  }
+
+  .cardContainer {
+    display: flex;
+  }
+
+  .price {
+    margin-left: 0;
+    width: 78px;
+
+  }
+
+  .carCard {
+    width: 95%;
+  }
+
+  .slick-arrow {
+    display: NONE;
+  }
+}
+
+@media screen and (max-width: 650)
+{
+  .cardContainer{
+    width: 90vh;
   }
 }
